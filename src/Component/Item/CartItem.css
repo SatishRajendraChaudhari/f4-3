@@ -1,0 +1,62 @@
+.cart-Container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+}
+
+.cart-item{
+    flex-basis: 60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 2rem;
+}
+
+.priceValue{
+    
+   
+    background-color: #000;
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.priceValue .pricelist ol li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-img{
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+}
+.card-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    
+}
+.check{
+    width: 105%;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    color: #000;
+    background-color: #fff;
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1050px) {
+    .cart-Container{
+        flex-direction: column;
+    }
+    .cart-item{
+        
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+        
+        
+    }
+}
